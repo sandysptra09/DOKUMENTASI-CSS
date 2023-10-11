@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px dashed #333;
+    width: 75vw;
+    height: 85vw;
+    margin: 40px auto;
+
+    /* uncomment properti top, right, bottom dan left di class box untuk mencoba */
+    position: relative;
+}
+
+.inner-container {
+    border: 2px solid blue;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+
+     /* uncomment properti top, right, bottom dan left di class box untuk mencoba */
+    /* position: relative; */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+    /* bisa diubah" atau bisa menabrak dengan content lain */
+    /* right: 2px;
+    top: 2px; */
+}
+
+.relative {
+    background-color: red;
+    position: relative;
+
+    /* bisa diubah" atau bisa menabrak dengan content lain */
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: green;
+    margin: 100px;
+    position: fixed;
+
+    /* posisinya akan tetap, tidak akan berubah meskipun discroll */
+    top: 100px;
+}
+
+.sticky {
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+/* End example 1 */
+
+
+/* ketika salah satu hyperlink footer di klik, maka akan bergulir secara halus */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+header, footer {
+    color: bisque;
+    text-align: center;
+    height: 100px;
+    
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+}
+
+footer {
+    background-color: black;
+    position: sticky;
+    /* position: fixed; */
+    bottom: 0;
+    font-size: 3rem;
+
+    /* width: 100%; */
+}
+
+a:visited {
+    color: white;
+}
+
+.social {
+    background-color: royalblue;
+    color: white;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}

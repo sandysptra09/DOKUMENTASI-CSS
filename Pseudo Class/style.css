@@ -1,0 +1,67 @@
+body {
+    margin: 25px;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul h2 {
+    display: inline;
+}
+
+a:hover {
+    color: lime;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:link {
+    color: red;
+}
+
+ul li a:visited {
+    color: royalblue;
+}
+
+.class-active:active {
+    color: brown;
+}
+
+input:focus {
+    color: greenyellow;
+    background-color: salmon;
+}
+
+
+/* Pseudo Element */
+
+p::first-line {
+    color: lime;
+}
+
+p::first-letter {
+    color: salmon;
+    font-size: 30px;
+}
+
+p::before {
+    content: " Oke ini adalah contoh pseudo ::before .";
+    color: red;
+}
+
+p::after {
+    content: "Sedangkan ini adalah contoh pseudo ::after ";
+    color: blue;
+}
+
+div input::placeholder {
+    color: yellow;
+    background-color: white;
+}

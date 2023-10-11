@@ -1,0 +1,44 @@
+.container {
+    width: auto;
+    height: auto;
+    background: #ecf0f1;
+    margin: 100px;
+    padding: 50px;
+    font-family: Poppins, "Helvetica Neue", arial, sans-serif;
+    
+    /* display: inline-flex; */
+
+    /* display: flex;
+    flex-direction: column; */
+
+    /* display: flex;
+    flex-wrap: nowrap; */
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bg-card1 {
+    background-color: #1dd0ad;
+}
+
+.bg-card2 {
+    background-color: #9b59b6;
+}
+
+.bg-card3 {
+    background-color: #e67e22;
+}
+
+.bg-card4 {
+    background-color: #f1c40f;
+}

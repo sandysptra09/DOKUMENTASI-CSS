@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+/* Begin Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img { display: block; }
+/* End Reset */
+
+/* Utility Classes */
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* End Utility Classes */
+
+body {
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+
+    /* untuk menggradasi warna background */
+    background-color: aliceblue;
+    background-image: linear-gradient(to left,steelblue, #fff);
+    
+}
+
+.container {
+    background-image: url(../img/pattern1.jpg);
+    background-repeat: repeat;
+}
+
+.hero {
+    border-bottom: 2px solid #333;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+
+    background-color: hsla(0, 0%, 0%, 0.200);
+    /* background-size: cover; */
+}
+
+.h1 {
+    font-size: 500%;
+    text-shadow: 2px 2px 5px seashell;
+    /* background-color: hsla(0, 0%, 0%, 0.200);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+
+.profile-pic-figure {
+    width: 35%;
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 10px double gray;
+    border-radius: 50%;
+}
+
+.example {
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 2px solid red;
+}
+
+.example img {
+    width: 25%;
+    height: auto;
+}

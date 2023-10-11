@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* main {
+    opacity: 0.5;
+} */
+
+a {
+    /* default */
+    /* text-decoration: underline; */
+
+    /* example */
+    text-decoration: none;
+    /* cursor: pointer; */  /*default cursor */
+    cursor: pointer ;
+    color: lime;
+
+}
+
+/* ketika cursor diarahkan */
+a:hover {
+    color: coral;
+}
+
+/* ketika diklik maka akan difokuskan */
+a:focus {
+    color: coral;
+    background-color: gray;
+}
+
+/* ketika diklik */
+a:active {
+    color: yellow;
+}

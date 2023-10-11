@@ -1,0 +1,52 @@
+main {
+    width: 600px;
+    border: 2px solid #000;
+    margin: 50px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "hulu hulu"
+
+        "side content"
+
+        "nav content"
+
+        "footer footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    text-align: center;
+}
+
+header {
+    padding: 50px;
+    background-color: lightblue;
+    grid-area: hulu;
+}
+
+aside {
+    padding: 50px;
+    background-color: lightcoral;
+    grid-area: side;
+
+}
+
+nav {
+    padding: 50px;
+    background-color: lightcyan;
+    grid-area: nav;
+}
+
+section {
+    padding: 50px;
+    background-color: lightgreen;
+    grid-area: content;
+}
+
+footer {
+    padding: 10px;
+    background-color: lightslategray;
+    grid-area: footer;
+
+}

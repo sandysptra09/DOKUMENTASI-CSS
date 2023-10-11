@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 200vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid black;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    /* justify-content: center;*/
+    /* justify-content: flex-end; */
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+
+    /* untuk menentukan arah flex */
+    flex-direction: row;
+
+    /* untuk membuat baris baru (membungkus) ketika box sudah melebihi ukuran content (container) */
+    flex-wrap: wrap;
+
+    /* shortcut untuk menuliskan kedua properti diatas  */
+    /* flex-flow: row wrap; */
+}
+
+.box {
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    /* bisa dipakai untuk menentukan ukuran properti flex */
+    flex-basis: 100px;
+
+}
+
+
+.box:nth-child(2) {
+    background-color: yellow;
+    flex-grow: 2;
+
+    /* untuk mendahulukan antrian box atau items */
+    /* order: 2; */
+}

@@ -1,0 +1,44 @@
+html {
+    font-family: monospace;
+}
+
+body {
+    font-size: large;
+}
+
+/* main {
+    
+} */
+
+/* Nested */
+h1,
+h2 {
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+p {
+    color: greenyellow;
+}
+
+p {
+    color: red;
+}
+
+.gray {
+    color: gray;
+}
+
+span {
+    color: white;
+    background-color: gold;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: red;
+    background-color: black;
+}

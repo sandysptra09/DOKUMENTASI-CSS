@@ -1,0 +1,22 @@
+.container2 {
+    width: 900px;
+    margin: 10px 10px;
+    border: 5px solid black;
+    
+}
+
+.kotak-sederhana{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px 5px;
+    transition: 1s 1s;
+}
+
+.container2:hover .kotak-sederhana {
+    transform: rotate(180deg);
+    margin-left: 800px;
+    background-color: royalblue;
+}
